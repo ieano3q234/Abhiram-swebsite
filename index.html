@@ -6,16 +6,16 @@
     <title>Document</title>
     <style>
         body{
-            background-color: rgb(185, 185, 185);
+            background-color: rgb(0, 0, 0);
             font-family: sans-serif;
-            color: white;
+            color: rgb(255, 255, 255);
         }
         .border{
-            border: 5px solid rgb(82, 82, 82);
+            border: 5px solid rgb(255, 0, 0);
             padding: 10px;
             border-radius: 10px;
-            background-color: rgb(82, 82, 82);
-            box-shadow: 0px 10px 10px grey;
+            background-color: rgb(0, 0, 0);
+            box-shadow: 0px 0px 23px #ff0000;
             width: 500px;
         }
         .maths{
@@ -24,23 +24,53 @@
         .photo{
             height: 300px;
             border-radius: 10px;
-            box-shadow: 0px 10px 15px grey;
+            box-shadow: 0px 0px 25px rgb(255, 0, 0);
             transition: 100ms;
+            animation-name: zeeshan;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
         }
-        .photo:hover{
-            height: 350px;
+        @keyframes zeeshan{
+            0%{
+            height: 30px;
             border-radius: 10px;
-            box-shadow: 0px 10px 15px grey;
+            box-shadow: 0px 0px 25px rgb(255, 0, 0);
+            transition: 100ms;
+            }
+            100%{
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 25px rgb(255, 0, 0);
+            transition: 100ms;
+            }
         }
+        
         .box{
             height: max-content;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+        #he{
+            border: 0px solid;
+            outline: none;
+            display: flex;
+            justify-content: center;
+        }
+        .box1{
+            border: 5px solid rgb(0, 191, 255);
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(0, 0, 0);
+            width: max-content;
+            box-shadow: 0px 0px 15px rgb(0, 191, 255);
+        }
     </style>
 </head>
 <body>
+    <div id="he">
+        <h1>The Chosen one</h1>
+    </div>
     <div class="border">
     <h1>Hello zeeshan,javeed,durga charan.</h1>
     <h2>It's your friend Abhiram Who created this website.</h2>
@@ -48,9 +78,9 @@
     <h1>translation:-</h1>
     <h1>హలో జీషన్, జావీద్, దుర్గా చరణ్.</h1>
     <h2>ఈ వెబ్‌సైట్‌ని సృష్టించింది మీ స్నేహితుడు అభిరామ్.</h2>
-    <h1>నేను మీ వీడియోలు, ఫోటోలు ఈ వెబ్‌సైట్‌లో ఉంచుతానని గుర్తుంచుకోండి.</h1>
     </div>
     <hr>
+    <div class="box1">
     <h1>PDF BOOKS:-</h1>
     <h1>click here</h1>
     <a href="7_Maths_SEM-1_Textbook.pdf" class="maths" target="_blank">
@@ -62,11 +92,12 @@
     <a href="7_Telugu_FL.pdf" class="maths" target="_blank">
         <h1>7th class TELUGU textbook</h1>
     </a>
+    </div>
     <hr>
     <h1>Real photo:</h1>
     <div class="box">
         <img src="IMG_20241027_104658.jpg" height="300px" class="photo">
     </div>
-    <h1>zeeshan పిల్లి లేదా సింహమా అని నాకు whatsapp lo టెక్స్ట్ చేయండి.</h1>
+    <h1>Happy Diwali to all</h1>
 </body>
 </html>
